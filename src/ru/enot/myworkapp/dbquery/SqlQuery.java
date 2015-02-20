@@ -26,9 +26,7 @@ public class SqlQuery {
             stat.execute("DROP TABLE IF EXISTS Greetings");
             stat.execute("CREATE TABLE IF NOT EXISTS Greetings (Message CHAR(20))");
             stat.execute("INSERT INTO Greetings VALUES ('" + af + "')");
-
         }
-
     }
 
     public String quaeryResult() throws SQLException, IOException {
